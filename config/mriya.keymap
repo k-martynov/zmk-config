@@ -53,11 +53,11 @@
 
         adjust_layer {
             bindings = <
-  &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
-  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-  &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                             &none         &trans        &none         &trans          &trans        &none         &trans        &none
+  &none        &none         &none         &none         &none         &none           &none   &none           &none             &none       &none   &none
+  &bootloader  &none         &none         &none         &none         &none           &none   &none           &none             &none       &none   &bootloader
+  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans
+  &sys_reset   &none         &none         &none         &none         &none           &none   &none           &none             &none       &none   &sys_reset
+                             &none         &trans        &none         &trans          &trans  &none           &trans            &none
             >;
         };
     };
